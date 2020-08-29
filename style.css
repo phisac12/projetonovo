@@ -1,0 +1,108 @@
+/*Declaração das variaveis*/
+
+/*Importação do Bootstrap*/
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@font-face{
+
+        font-family:comfortaa;
+        src: url('fonts/Comfortaa-Bold.ttf');
+
+}
+
+@font-face{
+
+        font-family:ginora;
+        src: url('fonts/Ginóra-Sans-Bold.otf')
+
+}
+
+@font-face{
+ 
+        font-family:ginorialight;
+        src: url('fonts/Ginóra-Sans-Light.otf');
+
+
+}
+
+body{
+
+        background-color:#2cb6bd;
+}
+
+.navbar {
+        background-color:#ccffcc!important;  
+}
+
+#butonj{
+        background-color:#53FFB6!important;
+        border: none!important;
+
+}
+
+#butonj:hover{
+
+        background-color:#74eec1!important;
+        color:white;
+}   
+
+#butonav{
+
+        border: none!important;
+        font-family: ginora;
+        color:#6666ff;
+
+}
+
+#butonav:hover{
+
+        border-bottom:1px solid white!important;
+        color:white;
+}
+
+#buttonlogo{
+
+        background-color:orange;
+        border: none;
+
+}
+
+#buttonlogo:hover{
+
+        background-color:rgb(221, 181, 107);
+
+}
+        
+
+#logoname{
+
+text-decoration:none;
+color:white;
+
+}
+
+.voltartopo{
+        
+        text-align: center;
+        display:none;
+
+}
+
+#footericons{
+
+        background-color:#3e22bb;
+        
+
+
+}
+
+#footericons p {
+
+        color:white;
+}
+
+.jumbotron{
+
+background-color:#2cb6bd;
+color:white;
+}

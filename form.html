@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+     <link rel="stylesheet" href="style.css">
+
+    <title>Formulário</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary navbar navbar-toggleable-md navbar-light bg-danger">
+    
+            <img src="images/Logo-png.png" width="50" height="50" class="d-inline-block align-top" alt="">
+        <a href="home.html" id="logoname" class="lead"></a>
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                <span class="navbar-toggler-icon">    
+                </span>
+    
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSite">
+    
+                <ul class="navbar-nav ml-auto">
+    
+                    <li class="nav-item">
+                        <a href="home.html" class="btn  btn-lg mt-2" style="margin-right:10px;" id="butonav">Inicio</a>
+                        
+                    </li>
+    
+                    <li class="nav-item">
+                        <a href="form.html" class="btn btn-lg mt-2" id="butonav">Cadastro Formulário</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="form.html" class="btn btn-lg mt-2" id="butonav" style="margin-left:10px;">Sobre mim</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+        <div class="jumbotron">
+    
+            <h1 class="display-3" style="text-align: center;">Melhore suas vendas!</h1>
+            <hr class="my-4">
+            <p class="lead">Agora você seleciona qual tipo de serviço você quer</p>
+        
+        </div>
+
+        <div class="col-md-12">
+
+            
+            <button type="button" href="#" class="btn btn-primary btn-lg btn-block mb-3" id="buttonsocial">Social Media</button>
+            <form action="" method="POST" style="display:none" id="socialmedia">
+                <label for="nome" class="lead">Nome</label>
+                <br class="my-4">
+                <input type="text"  class="form-control" name="nome" placeholder="Digite seu nome">
+                <label for="email" class="lead">Email</label>
+                <br class="my-4">
+                <input type="email" class="form-control" name="email" placeholder="Digite seu email">
+                <br class="my-4">
+                <div class="jumbotron py-5" style="background-color:rgb(193, 229, 230)">
+                    <button class="btn btn-outline-primary btn-lg mr-4">Voltar</button>
+                    <input type="submit" class="btn btn-outline-success btn-lg">
+                </div>
+            </form>
+
+            <button type="button" href="#" class="btn btn-secondary btn-lg btn-block" id="buttonlogo">Logo Marca</button>
+            <form action="" method="POST" style="display:none" id="logomarca">
+                <label for="nome" class="lead">Nome</label>
+                <br>
+                <input type="text"  class="form-control" name="nome" placeholder="Digite seu nome">
+                <label for="email" class="lead">Email</label>
+                <br>
+                <input type="email" class="form-control" name="email" placeholder="Digite seu email">
+                <br class="my-4">
+                <button class="btn btn-secondary btn-lg mr-4">Voltar</button>
+                <input type="submit" class="btn btn-outline-success btn-lg">
+
+
+            </form>
+
+
+        </div>
+
+
+        
+     </div>     
+
+
+
+</body>
+
+<div class="container-md-12" id="footericons">
+    <footer>
+        
+        <p class="lead text-center">Com social media você chega aonde quiser.</p>
+            <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                    <a href="#" class="btn-floating btn-fb mx-1"><img src="icons/social-color-1_logo-behance.svg">
+                    </a>
+                </li>
+
+                <li class="list-inline-item">
+                    <a href="#" class="btn-floating btn-fb mx-1"><img src="icons/social-color-1_logo-facebook.svg">
+                    </a>
+                </li>
+
+                <li class="list-inline-item">
+                    <a href="#" class="btn-floating btn-fb mx-1"><img src="icons/social-color-1_logo-instagram.svg">
+                    </a>
+                </li>
+
+                <li class="list-inline-item">
+                    <a href="#" class="btn-floating btn-fb mx-1"><img src="icons/social-color-1_logo-linkedin.svg">
+                    </a>
+                </li>
+            </ul>
+
+            <div class="footer-copyright text-center py-3 lead" style="color:white;"> © 2020 Copyright:
+                <a href="#" style="color:rgb(150, 140, 201); text-decoration:none;">ShiftCriativo</a>
+              </div>
+    </footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+ crossorigin="anonymous"></script>
+<script>
+
+$('#buttonsocial').click(function(){
+
+    $('#socialmedia').show();
+    $('#logomarca').hide();
+    $('#buttonlogo').hide();
+    
+
+})
+
+$('#buttonlogo').click(function(){
+
+$('#logomarca').show();
+$('#socialmedia').hide();
+$('#buttonsocial').hide();
+
+})
+
+    
+</script>
+
+</html>
